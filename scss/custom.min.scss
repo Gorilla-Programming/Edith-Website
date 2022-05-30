@@ -1,0 +1,56 @@
+$primary: #6850FF;
+$secondary: #86A0A4;
+$success: #A650FF;
+$danger: #233442;
+$dark: #131B21;
+
+// import boostrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $dark;
+}
+
+a {
+    img {
+        width: 38px;
+        height: 38px;
+        margin-right: 4px;
+    }
+}
+
+img {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-pro {
+    background-image: linear-gradient(to right, $primary 0%, $success  100%);
+    color: #fff;
+    transition: all ease-in;
+}
+
+.btn-pro:hover {
+    color: #fff;
+    transform: translateY(-10%);
+}
+
+.btn-exp {
+    background-color: $dark;
+    border: 2px solid $secondary;
+    color: $secondary;
+}
+
+.btn-exp:hover {
+    color: $secondary;
+    transform: translateY(-10%);
+}
+
+.card {
+    border-radius: 30px;
+}
+
+.fs-c {
+    font-size: 0.95rem;
+}
